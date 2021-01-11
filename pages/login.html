@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Realtion is an online desktop publishing tool aims to help publishers online on the go"
+    />
+
+    <title>Login - Relation | #1 Online Publishing Tool</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="preconnect" href="https://cdn.glitch.com" crossorigin />
+    <link rel="stylesheet" href="/style/custom.css" />
+    <link rel="stylesheet" href="/style/window-tweeks.css" defer />
+    <link rel="stylesheet" href="/ext/bootstrap.min.css" />
+  </head>
+  <body>
+    <!--  ||-HEADER   -->
+
+    <!--   ||-MAIN   -->
+    <main>
+      <div
+        class="text-muted d-none d-sm-block fixed-top my-3 my-md-4 mx-3 mx-md-5"
+      >
+        <i class="fas fa-arrow-left"></i> <a href="/">Back to Home</a>
+      </div>
+      <section class="bg-light">
+        <div
+          class="container min-vh-100 py-0 py-sm-5 px-0 px-md-3 my-0 d-flex flex-column justify-content-sm-center align-items-sm-center"
+        >
+          <div
+            class="col-12 col-md-8 col-lg-6 col-xl-5 pt-0 pb-5 py-sm-4 mt-0 mt-sm-2 bg-white text-dark rounded border"
+          >
+            <div class="text-muted d-block d-sm-none my-3 my-md-4 mx-1 mx-sm-2">
+              <i class="fas fa-arrow-left"></i> <a href="/">Back to Home</a>
+            </div>
+
+            <p class="text-center text-muted pt-5 pt-sm-0">
+              Login using
+            </p>
+            <div class="d-flex mb-4">
+              <button class="btn btn-danger flex-fill mr-1">
+                <i class="fab fa-google fa-lg"></i>
+                <span class="sr-only">Google</span>
+              </button>
+              <button class="btn btn-info flex-fill ml-1">
+                <i class="fab fa-facebook fa-lg"></i>
+                <span class="sr-only">Facebook</span>
+              </button>
+            </div>
+            <p class="text-center text-muted">
+              or using Email and Password
+            </p>
+            <form submit="#">
+              <div class="form-group">
+                <label for="email">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="your-email@domain.com"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp"
+                  >We'll never share your data with anyone</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group form-check px-0">
+                <input
+                  type="checkbox"
+                  class="form-chheck-input"
+                  id="remember-me"
+                />
+                <label for="remebmer-me">Remember Me</label>
+              </div>
+              <button class="btn btn-success btn-block" type="submit">
+                Log In
+              </button>
+            </form>
+          </div>
+
+          <div class="text-muted my-3 text-center">
+            <div class="d-block d-sm-inline-block mr-sm-3 my-3 my-sm-0">
+              <a href="#">Forget Password?</a>
+            </div>
+            <div class="d-block d-sm-inline-block mb-3 mb-sm-0">
+              <a href="#">Create a new account</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--    ||-FOOTER    -->
+
+    <!--   ||- Scripts  -->
+    <script src="/ext/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="/ext/popper.min.js" defer></script>
+    <script src="/ext/bootstrap.min.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/8375ed5b9b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </body>
+</html>
