@@ -20,11 +20,12 @@
 								alert(
 									`Congratulations! You are successfully signed in.`
 								);
-							}
-							if (form.dataset.formType === "newsletter") {
+							} else if (form.dataset.formType === "newsletter") {
 								alert(
 									`Congratulations! You are successfully subscribed to our newsletter!`
 								);
+							} else {
+								return;
 							}
 							event.preventDefault();
 							form.reset();
