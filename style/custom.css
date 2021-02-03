@@ -464,3 +464,7 @@ tfoot th[scope="row"] {
     opacity: 1;
   }
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
