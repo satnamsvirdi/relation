@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/style/custom.css" />
     <link rel="stylesheet" href="/style/window-tweeks.css" defer />
     <link rel="stylesheet" href="/ext/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
   <body>
     <!--  ||-HEADER   -->
@@ -79,6 +80,7 @@
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
+                <div class="input-group">
                 <input
                   type="password"
                   name="password"
@@ -87,6 +89,10 @@
                   data-toggle="password"
                   required
                 />
+                <div class="input-group-append">
+                  <div class="input-group-text" ><a href="#"id="toggler"><i class="bi bi-eye-slash text-dark" id="icon"></i></a></div>
+                </div>
+              </div>
                 <div class="valid-feedback">Perfect</div>
                 <div class="invalid-feedback">
                   Enter a valid password please
@@ -97,7 +103,7 @@
                   <input type="checkbox" class="" id="remember-me" />
                   <label for="remebmer-me">Remember Me</label>
                 </div>
-                  // TODO: add show password button
+                 
                 <!-- <div class="form-group form-check px-0 ml-3">
                   <input type="checkbox" class="" id="show-password" />
                   <label for="show-password">Show password</label>
@@ -125,10 +131,9 @@
     <!--    ||-FOOTER    -->
 
     <!--   ||- Scripts  -->
-    <script src="/ext/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="/ext/jquery-3.4.1.slim.min.js" ></script>
     <script src="/ext/popper.min.js" defer></script>
     <script src="/ext/bootstrap.min.js" defer></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.0.3/bootstrap-show-password.min.js"></script>
     <script src="/script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8375ed5b9b.js"
@@ -137,7 +142,24 @@
     ></script>
 
     <script type="text/javascript">
+$(document).ready(function() {
+  $('toggler a').click(function() {
+$('toggler i').add()
+  })
+  // alert('im in')
+   $('#toggler').click(function() {
+    if ($('#password').attr('type') === 'password') {
+      $('#password').attr('type', 'text')
+      $('#toggler i').removeClass('bi-eye-slash')
+      $('#toggler i').addClass('bi-eye')
+    } else {
+      $('#password').attr('type', 'password')
 
+      $('#toggler i').removeClass('bi-eye')
+      $('#toggler i').addClass('bi-eye-slash')
+    }
+   })
+});
     </script>
   </body>
 </html>
