@@ -8,7 +8,17 @@
 */
 
 /* Custom color pallette */
+
+th:nth-child(3) {
+  background: var(--bg-starter);
+  color: white;
+  /*transform: scale(1.2);*/
+  /*transform-origin: 50% 50%;*/
+  margin-top: -9px;
+}
+
 :root {
+  --bg-starter: #20c997;
   --blue-900: #03045eff;
   --blue-800: #023e8aff;
   --blue-700: #0077b6ff;
@@ -19,12 +29,12 @@
   --blue-200: #ade8f4ff;
   --blue-100: #caf0f8ff;
   --blue-black: #010228;
-  --blue-fade: #6c658d; 
-  --blue-focus: rgba(72,202, 228, .5);
-  --blue-white: #EDFAFD;
-  --blue-whiter: #f2fafc;#f7fafc;
+  --blue-fade: #6c658d;
+  --blue-focus: rgba(72, 202, 228, 0.5);
+  --blue-white: #edfafd;
+  --blue-whiter: #f2fafc;
   --blue-whiteless: #dcf5fa;
-  
+
   --white: #fff;
   --gray-100: #f8f9faff;
   --gray-200: #e9ecefff;
@@ -35,7 +45,7 @@
   --gray-700: #495057ff;
   --gray-800: #343a40ff;
   --gray-900: #212529ff;
-  
+
   --secondary: #6c757d;
 }
 
@@ -44,7 +54,7 @@
 
 /* setting custom icon for hamburger menu for dark background */
 .navbar-toggler-icon {
-  background-image: url(data:image/svg+xml,%3csvg xmlns=http://www.w3.org/2000/svg width=30 height=30 viewBox=0 0 30 30%3e%3cpath stroke=rgba(255, 255, 255, 0.7) stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=M4 7h22M4 15h22M4 23h22/%3e%3c/svg%3e) !important;
+  background-image: url(data:image/svg+xml,%3csvg xmlns=http://www.w3.org/2000/svg width=30 height=30 viewBox=0 0 30 30%3e%3cpath255 255 255 0.7 stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d=M4 7h22M4 15h22M4 23h22/%3e%3c/svg%3e) !important;
 }
 
 /* carousel buttons */
@@ -54,7 +64,6 @@
 .carousel-control-next-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%236c757dff' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/%3e%3c/svg%3e") !important;
 }
-
 
 /* customizing carousel item and indicators */
 .carousel-indicators {
@@ -73,7 +82,6 @@
   max-width: 800px;
   border-radius: 5px;
 }
-
 
 /* 
 * creating clent-box for displaying clients 
@@ -116,14 +124,14 @@
   }
 }
 
-@media (min-width: 992px) {  
+@media (min-width: 992px) {
   .hero-illustration {
     position: absolute !important;
     right: -160px;
     top: 10px;
   }
   .hero-illustration img {
-    width: 700px ;
+    width: 700px;
     user-select: none;
   }
 }
@@ -135,10 +143,9 @@
     top: -10px;
   }
   .hero-illustration img {
-     width: 840px;
+    width: 840px;
   }
 }
-
 
 /* ||Section : Color tweeks */
 
@@ -152,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--gray-800) ;
+  color: var(--gray-800);
 }
 
 /* 
@@ -161,9 +168,14 @@ h6 {
 */
 header {
   background: var(--blue-800);
-  
-  background: rgb(4,85,189);
-background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, rgba(2,62,138,1) 100%); 
+
+  background: rgb(4, 85, 189);
+  background: linear-gradient(
+    212deg,
+    rgba(4, 85, 189, 1) 0%,
+    rgba(4, 77, 170, 1) 50%,
+    rgba(2, 62, 138, 1) 100%
+  );
 }
 
 .custom-navbar-bg {
@@ -177,23 +189,27 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
   user-select: none;
 }
 
-.navbar-brand:hover, .navbar .nav-link:hover,
-.navbar-brand:focus, .navbar .nav-link:focus {
+.navbar-brand:hover,
+.navbar .nav-link:hover,
+.navbar-brand:focus,
+.navbar .nav-link:focus {
   color: var(--blue-400) !important;
 }
 
-.navbar-brand:active, .navbar .nav-link:active {
+.navbar-brand:active,
+.navbar .nav-link:active {
   color: var(--blue-500) !important;
 }
 .navbar .nav-link.active {
   color: var(--blue-300) !important;
 }
 
-.navbar-brand:focus, .navbar .nav-link:focus,
+.navbar-brand:focus,
+.navbar .nav-link:focus,
 .footer-link:focus {
   outline: 0 !important;
   box-shadow: 0 0 0 0.2rem var(--blue-focus) !important;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
 }
 
 /* dropdown menu, items, header, and divider */
@@ -220,7 +236,7 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
 }
 .dropdown-item:disabled,
 .dropdown-item.disabled {
-  opacity: .8 ;
+  opacity: 0.8;
 }
 .dropdown-divider {
   border-top-color: var(--blue-100) !important;
@@ -230,11 +246,16 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
 }
 
 /* customizing jumbotron background and text color */
-.jumbotron  {
+.jumbotron {
   background: var(--blue-800) important;
-  
-background: rgb(4,85,189);
-background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, rgba(2,62,138,1) 100%);
+
+  background: rgb(4, 85, 189);
+  background: linear-gradient(
+    212deg,
+    rgba(4, 85, 189, 1) 0%,
+    rgba(4, 77, 170, 1) 50%,
+    rgba(2, 62, 138, 1) 100%
+  );
 }
 .jumbotron h1 {
   color: var(--blue-white);
@@ -251,7 +272,7 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
 * - active
 */
 .btn-primary {
-  color: var(--blue-800)  !important;
+  color: var(--blue-800) !important;
   background-color: var(--blue-white) !important;
 }
 .btn-outline-primary {
@@ -262,7 +283,7 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
   border-color: var(--blue-white) !important;
 }
 .btn-link {
-  color: var(--blue-600) !important
+  color: var(--blue-600) !important;
 }
 
 .btn-primary:hover {
@@ -294,7 +315,7 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
   background-color: var(--blue-200) !important;
 }
 
-.btn-primary:disabled {  
+.btn-primary:disabled {
   color: var(--blue-800) !important;
   background: var(--blue-white) !important;
 }
@@ -313,7 +334,6 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
   cursor: not-allowed;
   border: 1px solid var(--blue-white) !important;
 }
-
 
 /* focus for carousel buttons */
 /* .carousel-control-prev:focus,
@@ -337,13 +357,21 @@ background: linear-gradient(212deg, rgba(4,85,189,1) 0%, rgba(4,77,170,1) 50%, r
 /* colors for long-width small CTA sections */
 .bg-accent {
   background-color: var(--blue-400) !important;
-  background-image: linear-gradient(325deg, var(--blue-200), var(--blue-500)) ;
-  
-  background: rgb(81,232,232);
-background: linear-gradient(212deg, rgba(81,232,232,1) 0%, rgba(0,180,216,1) 100%);
-  
-background: rgb(81,232,232);
-background: linear-gradient(212deg, rgba(81,232,232,1) 0%, rgba(0,180,216,1) 54%);
+  background-image: linear-gradient(325deg, var(--blue-200), var(--blue-500));
+
+  background: rgb(81, 232, 232);
+  background: linear-gradient(
+    212deg,
+    rgba(81, 232, 232, 1) 0%,
+    rgba(0, 180, 216, 1) 100%
+  );
+
+  background: rgb(81, 232, 232);
+  background: linear-gradient(
+    212deg,
+    rgba(81, 232, 232, 1) 0%,
+    rgba(0, 180, 216, 1) 54%
+  );
 }
 .text-accent {
   color: var(--blue-white);
@@ -368,8 +396,13 @@ background: linear-gradient(212deg, rgba(81,232,232,1) 0%, rgba(0,180,216,1) 54%
   color: var(--blue-white);
   background-color: var(--blue-black);
 
-background: rgb(3,39,85);
-background: linear-gradient(212deg, rgba(3,39,85,1) 0%, rgba(2,4,96,1) 50%, rgba(1,2,40,1) 100%);
+  background: rgb(3, 39, 85);
+  background: linear-gradient(
+    212deg,
+    rgba(3, 39, 85, 1) 0%,
+    rgba(2, 4, 96, 1) 50%,
+    rgba(1, 2, 40, 1) 100%
+  );
 }
 
 footer h6 {
@@ -379,25 +412,26 @@ footer h6 {
 .footer-link {
   color: var(--blue-white);
 }
-.footer-btn-link, .footer-secondary-text {
+.footer-btn-link,
+.footer-secondary-text {
   color: var(--blue-fade) !important;
 }
 
 .footer-link:hover {
   color: var(--blue-400);
 }
-.footer-btn-link:hover{
+.footer-btn-link:hover {
   color: var(--blue-400) !important;
 }
 
-.footer-btn-link:focus{
+.footer-btn-link:focus {
   text-decoration: underline !important;
 }
 
 .footer-link:active {
   color: var(--blue-500);
 }
-.footer-btn-link:active{
+.footer-btn-link:active {
   color: var(--blue-500) !important;
 }
 
@@ -408,15 +442,16 @@ footer h6 {
   border-color: var(--blue-fade);
 }
 /* ///////////////////////////// */
-.table-custom-bg, tbody th[scope="row"] {
+.table-custom-bg,
+tbody th[scope="row"] {
   background: var(--blue-whiteless);
   color: var(--blue-700);
 }
 .table-striped tbody.bg-blue-white tr:nth-of-type(odd) {
-    background-color: var(--white) !important;
+  background-color: var(--white) !important;
 }
 .table-striped tbody.bg-blue-white tr:nth-of-type(even) {
-    background-color: var(--blue-whiteless) !important;
+  background-color: var(--blue-whiteless) !important;
 }
 tfoot {
   background: var(--blue-600);
@@ -431,20 +466,18 @@ tfoot th {
   font-weight: 600;
 }
 tfoot th small {
-  color: var(--blue-white)
+  color: var(--blue-white);
 }
 tfoot th[scope="row"] {
   font-size: 1rem;
 }
 
 .terms h6 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600px;
-  
-  
 }
 .terms li {
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.6rem;
 }
