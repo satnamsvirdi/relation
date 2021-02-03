@@ -16,9 +16,16 @@
 						}
 						form.classList.add("was-validated");
 						if (form.checkValidity() === true) {
-							alert(
-								`Congratulations! You are successfully subscribed to our newsletter!`
-							);
+							if (form.dataset.formType === "login") {
+								alert(
+									`Congratulations! You are successfully signed in.`
+								);
+							}
+							if (form.dataset.formType === "newsletter") {
+								alert(
+									`Congratulations! You are successfully subscribed to our newsletter!`
+								);
+							}
 							event.preventDefault();
 							form.reset();
 							form.classList.remove("was-validated");

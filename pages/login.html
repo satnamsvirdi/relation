@@ -13,9 +13,9 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="preconnect" href="https://cdn.glitch.com" crossorigin />
-    <link rel="stylesheet" href="/style/custom.css" />
-    <link rel="stylesheet" href="/style/window-tweeks.css" defer />
-    <link rel="stylesheet" href="/ext/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/custom.css" />
+    <link rel="stylesheet" href="../style/window-tweeks.css" defer />
+    <link rel="stylesheet" href="../ext/bootstrap.min.css" />
   </head>
   <body>
     <!--  ||-HEADER   -->
@@ -54,7 +54,12 @@
             <p class="text-center text-muted">
               or using Email and Password
             </p>
-            <form submit="#">
+            <form
+              submit="#"
+              class="needs-validation"
+              data-form-type="login"
+              novalidate
+            >
               <div class="form-group">
                 <label for="email">Email address</label>
                 <input
@@ -64,10 +69,13 @@
                   name="email"
                   placeholder="your-email@domain.com"
                   aria-describedby="emailHelp"
+                  required
                 />
                 <small id="emailHelp"
                   >We'll never share your data with anyone</small
                 >
+                <div class="valid-feedback">Perfect</div>
+                <div class="invalid-feedback">Enter a valid email please</div>
               </div>
               <div class="form-group">
                 <label for="password">Password</label>
@@ -76,19 +84,29 @@
                   name="password"
                   id="password"
                   class="form-control"
+                  data-toggle="password"
+                  required
                 />
+                <div class="valid-feedback">Perfect</div>
+                <div class="invalid-feedback">
+                  Enter a valid password please
+                </div>
               </div>
-              <div class="form-group form-check px-0">
-                <input
-                  type="checkbox"
-                  class="form-chheck-input"
-                  id="remember-me"
-                />
-                <label for="remebmer-me">Remember Me</label>
+              <div class="d-flex">
+                <div class="form-group form-check px-0">
+                  <input type="checkbox" class="" id="remember-me" />
+                  <label for="remebmer-me">Remember Me</label>
+                </div>
+                  // TODO: add show password button
+                <!-- <div class="form-group form-check px-0 ml-3">
+                  <input type="checkbox" class="" id="show-password" />
+                  <label for="show-password">Show password</label>
+                </div> -->
               </div>
               <button class="btn btn-success btn-block" type="submit">
                 Log In
               </button>
+              </div>
             </form>
           </div>
 
@@ -107,13 +125,19 @@
     <!--    ||-FOOTER    -->
 
     <!--   ||- Scripts  -->
-    <script src="/ext/jquery-3.4.1.slim.min.js" defer></script>
-    <script src="/ext/popper.min.js" defer></script>
-    <script src="/ext/bootstrap.min.js" defer></script>
+    <script src="../ext/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="../ext/popper.min.js" defer></script>
+    <script src="../ext/bootstrap.min.js" defer></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-show-password/1.0.3/bootstrap-show-password.min.js"></script>
+    <script src="../script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/8375ed5b9b.js"
       crossorigin="anonymous"
       defer
     ></script>
+
+    <script type="text/javascript">
+
+    </script>
   </body>
 </html>
