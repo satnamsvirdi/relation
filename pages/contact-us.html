@@ -44,7 +44,7 @@
                   class="nav-link dropdown-toggle"
                   id="toggleSolutions"
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-bs-toggle=""
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Solutions</a
@@ -105,7 +105,7 @@
                   href="#"
                   id="toggleResources"
                   role="button"
-                  data-bs-toggle="dropdown"
+                  data-bs-toggle=""
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Resources</a
@@ -157,51 +157,74 @@
 
           <div class="row mb-5">
             <div class="col-12 col-md-10 col-lg-8">
-              <form>
+              <form
+                class="needs-validation"
+                method="POST"
+                action="javascript:void(0)"
+                novalidate
+                data-bs-form-type="contact"
+              >
                 <div class="row">
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 mb-3">
                     <label for="firstname">First Name</label>
                     <input
                       type="text"
-                      class="form-control mb-3"
+                      class="form-control"
                       id="firstname"
                       placeholder="John"
+                      required
                     />
+                    <div class="valid-feedback">Perfect</div>
                   </div>
-                  <div class="col-12 col-md-6">
+                  <div class="col-12 col-md-6 mb-3">
                     <label for="lastname">Last Name</label>
                     <input
                       type="text"
-                      class="form-control mb-3"
+                      class="form-control"
                       id="lastname"
                       placeholder="Doe"
+                      required
                     />
+                    <div class="valid-feedback">Perfect</div>
                   </div>
                 </div>
 
                 <div class="form-row">
-                  <div class="col-12">
+                  <div class="col-12 mb-3">
                     <label for="email">Email address</label>
                     <input
                       type="email"
-                      class="form-control mb-3"
+                      class="form-control"
                       id="email"
                       placeholder="Johndoe@example.com"
+                      required
                     />
+                    <div class="valid-feedback">Perfect</div>
+                    <div class="invalid-feedback">
+                      Enter a valid email please
+                    </div>
                   </div>
                 </div>
                 <div class="form-row">
-                  <div class="col-12">
+                  <div class="col-12 mb-3">
                     <label for="description">Description</label>
                     <textarea
-                      class="form-control mb-3"
+                      class="form-control"
                       id="description"
                       placeholder="Type something here"
                       rows="5"
+                      required
                     ></textarea>
+                    <div class="valid-feedback">Perfect</div>
+                    <div class="invalid-feedback">
+                      Please enter a message in the textarea.
+                    </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-success btn-block my-3">
+                <button
+                  type="submit"
+                  class="btn btn-success d-block w-100 my-3"
+                >
                   Submit
                 </button>
               </form>

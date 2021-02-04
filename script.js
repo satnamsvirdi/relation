@@ -26,8 +26,12 @@
 								alert(
 									`Congratulations! You are successfully subscribed to our newsletter!`
 								);
+							} else if (form.dataset.bsFormType === "contact") {
+								alert(
+									`Congratulations! Your contact form has been submitted successfully!`
+								);
 							} else {
-								return;
+								alert(`You submitted this form successfully!`);
 							}
 							event.preventDefault();
 							form.reset();
