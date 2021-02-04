@@ -33,7 +33,7 @@
           class="container min-vh-100 py-0 py-sm-5 px-0 px-md-3 my-0 d-flex flex-column justify-content-sm-center align-items-sm-center"
         >
           <div
-            class="col-12 col-md-8 col-lg-6 col-xl-5 pt-0 pb-5 py-sm-4 mt-0 mt-sm-2 bg-white text-dark rounded border"
+            class="col-12 col-md-8 col-lg-6 col-xl-5 pt-0 pb-5 py-sm-4 px-4 mt-0 mt-sm-2 bg-white text-dark rounded border"
           >
             <div class="text-muted d-block d-sm-none my-3 my-md-4 mx-1 mx-sm-2">
               <i class="fas fa-arrow-left"></i> <a href="/">Back to Home</a>
@@ -43,11 +43,11 @@
               Login using
             </p>
             <div class="d-flex mb-4">
-              <button class="btn btn-danger flex-fill mr-1">
+              <button class="btn btn-danger flex-fill me-1">
                 <i class="fab fa-google fa-lg"></i>
                 <span class="sr-only">Google</span>
               </button>
-              <button class="btn btn-info flex-fill ml-1">
+              <button class="btn btn-info flex-fill ms-1">
                 <i class="fab fa-facebook fa-lg"></i>
                 <span class="sr-only">Facebook</span>
               </button>
@@ -59,10 +59,10 @@
               submit="#"
               method="POST"
               class="needs-validation"
-              data-form-type="login"
+              data-bs-form-type="login"
               novalidate
             >
-              <div class="form-group">
+              <div class="form-group mb-2">
                 <label for="email">Email address</label>
                 <input
                   type="email"
@@ -79,7 +79,7 @@
                 <div class="valid-feedback">Perfect</div>
                 <div class="invalid-feedback">Enter a valid email please</div>
               </div>
-              <div class="form-group">
+              <div class="form-group mb-2">
                 <label for="password">Password</label>
                 <div class="input-group">
                 <input
@@ -87,11 +87,15 @@
                   name="password"
                   id="password"
                   class="form-control"
-                  data-toggle="password"
+                  data-bs-toggle="password"
                   required
                 />
                 <div class="input-group-append">
-                  <div class="input-group-text" ><a href="#"id="toggler"><i class="bi bi-eye-slash text-dark" id="icon"></i></a></div>
+                  <div class="input-group-text" >
+                    <a href="#"id="toggler">
+                      <i class="bi bi-eye-slash text-dark" id="icon"></i>
+                    </a>
+                  </div>
                 </div>
               </div>
                 <div class="valid-feedback">Perfect</div>
@@ -99,32 +103,28 @@
                   Enter a valid password please
                 </div>
               </div>
-              <div class="d-flex">
-                <div class="form-group form-check px-0">
-                  <input type="checkbox" class="" id="remember-me" />
+                <div class="form-group form-check mb-3">
+                  <input type="checkbox" class="form-check-input" id="remember-me" />
                   <label for="remebmer-me">Remember Me</label>
                 </div>
-                 
-                <!-- <div class="form-group form-check px-0 ml-3">
-                  <input type="checkbox" class="" id="show-password" />
-                  <label for="show-password">Show password</label>
-                </div> -->
-              </div>
-              <button class="btn btn-success btn-block" type="submit">
+              <button class="btn btn-success d-block w-100 " type="submit">
                 Log In
               </button>
               </div>
             </form>
-          </div>
 
-          <div class="text-muted my-3 text-center">
-            <div class="d-block d-sm-inline-block mr-sm-3 my-3 my-sm-0">
+            <!-- to here -->
+            <div class="text-muted my-3 text-center">
+            <div class="d-block d-sm-inline-block me-sm-3 my-3 my-sm-0">
               <a href="#">Forget Password?</a>
             </div>
             <div class="d-block d-sm-inline-block mb-3 mb-sm-0">
               <a href="#">Create a new account</a>
             </div>
           </div>
+          </div>
+
+          <!-- from there -->
         </div>
       </section>
     </main>

@@ -10,7 +10,7 @@
 /* Custom color pallette */
 
 th:nth-child(3) {
-  background: var(--bg-starter);
+  background: var(--bg-starter) !important;
   color: white;
   /*transform: scale(1.2);*/
   /*transform-origin: 50% 50%;*/
@@ -444,8 +444,12 @@ footer h6 {
 /* ///////////////////////////// */
 .table-custom-bg,
 tbody th[scope="row"] {
-  background: var(--blue-whiteless);
+  background: var(--blue-whiteless) !important;
   color: var(--blue-700);
+}
+
+.table > :not(caption) > * > * {
+  background-image: linear-gradient(transparent, transparent) !important;
 }
 .table-striped tbody.bg-blue-white tr:nth-of-type(odd) {
   background-color: var(--white) !important;
@@ -453,6 +457,7 @@ tbody th[scope="row"] {
 .table-striped tbody.bg-blue-white tr:nth-of-type(even) {
   background-color: var(--blue-whiteless) !important;
 }
+
 tfoot {
   background: var(--blue-600);
   color: var(--white);

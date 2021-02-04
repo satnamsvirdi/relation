@@ -16,11 +16,13 @@
 						}
 						form.classList.add("was-validated");
 						if (form.checkValidity() === true) {
-							if (form.dataset.formType === "login") {
+							if (form.dataset.bsFormType === "login") {
 								alert(
 									`Congratulations! You are successfully signed in.`
 								);
-							} else if (form.dataset.formType === "newsletter") {
+							} else if (
+								form.dataset.bsFormType === "newsletter"
+							) {
 								alert(
 									`Congratulations! You are successfully subscribed to our newsletter!`
 								);

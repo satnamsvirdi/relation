@@ -13,31 +13,29 @@
 
     <!-- import the webpage's stylesheet -->
     <link rel="preconnect" href="https://cdn.glitch.com" crossorigin />
-    <link rel="stylesheet" href="/style/custom.css" />
-    <link rel="stylesheet" href="/style/window-tweeks.css" defer />
-    <link rel="stylesheet" href="/ext/bootstrap.min.css"  />
-
-   
+    <link rel="stylesheet" href="../style/custom.css" />
+    <link rel="stylesheet" href="../style/window-tweeks.css" defer />
+    <link rel="stylesheet" href="../ext/bootstrap.min.css" />
   </head>
   <body>
     <!--  ||-HEADER   -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar-bg ">
+      <nav class="navbar navbar-expand-lg navbar-dark custom-navbar-bg">
         <div class="container">
-          <a class="navbar-brand " href="/">
+          <a class="navbar-brand" href="/">
             Relation
           </a>
           <button
             id="navbar-toggler"
             class="navbar-toggler"
-            data-toggle="collapse"
+            data-bs-toggle="collapse"
             type="button"
-            data-target="#topNav"
+            data-bs-target="#topNav"
           >
             <span class="fas fa-bars"> </span>
           </button>
           <div class="navbar-collapse collapse" id="topNav">
-            <div class="navbar-nav ml-auto">
+            <div class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="/pages/features.html">Features</a>
               </li>
@@ -46,7 +44,7 @@
                   class="nav-link dropdown-toggle"
                   id="toggleSolutions"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Solutions</a
@@ -89,16 +87,16 @@
                     class="dropdown-item disabled"
                     >Small Business</a
                   >
-                  <a href="/pages/solutions.html#startups" class="dropdown-item disabled"
+                  <a
+                    href="/pages/solutions.html#startups"
+                    class="dropdown-item disabled"
                     >Startups</a
                   >
                 </div>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/pages/pricing.html"
-                  >Pricing</a
-                >
+                <a class="nav-link" href="/pages/pricing.html">Pricing</a>
               </li>
 
               <li class="nav-item dropdown">
@@ -107,16 +105,24 @@
                   href="#"
                   id="toggleResources"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-toggle="dropdown"
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Resources</a
                 >
                 <div class="dropdown-menu">
-                  <a href="/pages/docs" class="dropdown-item disabled">Documentations</a>
-                  <a href="/pages/tips" class="dropdown-item disabled">Relation Tips</a>
-                  <a href="/pages/training" class="dropdown-item disabled">Training</a>
-                  <a href="/pages/seminars" class="dropdown-item disabled">Seminars</a>
+                  <a href="/pages/docs" class="dropdown-item disabled"
+                    >Documentations</a
+                  >
+                  <a href="/pages/tips" class="dropdown-item disabled"
+                    >Relation Tips</a
+                  >
+                  <a href="/pages/training" class="dropdown-item disabled"
+                    >Training</a
+                  >
+                  <a href="/pages/seminars" class="dropdown-item disabled"
+                    >Seminars</a
+                  >
                   <div class="dropdown-divider"></div>
                   <a href="/pages/blog.html" class="dropdown-item"
                     >Blog
@@ -125,13 +131,15 @@
                   <a href="/pages/help-centre" class="dropdown-item disabled"
                     >Help Centre</a
                   >
-                  <a href="/pages/forum" class="dropdown-item disabled">Forum</a>
+                  <a href="/pages/forum" class="dropdown-item disabled"
+                    >Forum</a
+                  >
                 </div>
               </li>
             </div>
-            <div class="navbar-nav ml-3">
-              <a class="nav-link mr-md-3" href="/pages/login.html">Log In</a>
-              <a class="btn btn-primary my-3 my-md-0 " href="#">Try Relation</a>
+            <div class="navbar-nav ms-3">
+              <a class="nav-link me-md-3" href="/pages/login.html">Log In</a>
+              <a class="btn btn-primary my-3 my-md-0" href="#">Try Relation</a>
             </div>
           </div>
         </div>
@@ -150,7 +158,7 @@
           <div class="row mb-5">
             <div class="col-12 col-md-10 col-lg-8">
               <form>
-                <div class="form-row">
+                <div class="row">
                   <div class="col-12 col-md-6">
                     <label for="firstname">First Name</label>
                     <input
@@ -198,35 +206,44 @@
                 </button>
               </form>
             </div>
-            
+
             <div class="col-12 col-md-10 col-lg-4 mt-4 mt-lg-0">
               <div class="bg-light px-4 py-5 rounded">
                 <div class="mb-3">
-                <h6 class="mb-0 pb-0">
-                 <i class="fas fa-phone-alt icon-light fa-sm"></i> Call us at
-                </h6>
-                <a class="btn-link d-inline-block mt-1" style="font-size: 1.3rem; font-weight: 500;" href="tel://+12345678900">+1 234 567 8900</a>
+                  <h6 class="mb-0 pb-0">
+                    <i class="fas fa-phone-alt icon-light fa-sm"></i> Call us at
+                  </h6>
+                  <a
+                    class="btn-link d-inline-block mt-1"
+                    style="font-size: 1.3rem; font-weight: 500;"
+                    href="tel://+12345678900"
+                    >+1 234 567 8900</a
+                  >
+                </div>
+                <div class="mb-3">
+                  <h6 class="mb-0 pb-0">
+                    <i class="fas fa-envelope icon-light fa-sm"></i> Email us at
+                  </h6>
+                  <a
+                    class="btn-link d-inline-block mt-1 text-break"
+                    style="font-size: 1.3rem; font-weight: 500;"
+                    href="mailto:mail@example.com"
+                    >mail@example.com</a
+                  >
+                </div>
               </div>
-              <div class="mb-3">
-                <h6 class="mb-0 pb-0">
-                  <i class="fas fa-envelope icon-light fa-sm"></i> Email us at
-                </h6>
-                <a class="btn-link d-inline-block mt-1 text-break" style="font-size: 1.3rem; font-weight: 500;" href="mailto:mail@example.com">mail@example.com</a> 
-              </div>
-              </div>
-              
             </div>
           </div>
         </div>
       </section>
 
       <section class="bg-accent">
-        <div class="container ">
+        <div class="container">
           <div class="row py-5">
-            <div class="col-12 col-md-10 pr-md-0">
+            <div class="col-12 col-md-10 pe-md-0">
               <p
-                class="lead text-accent text-center text-md-left mb-0 my-1"
-                style="font-size: 1.4rem"
+                class="lead text-accent text-md-left mb-0 my-1"
+                style="font-size: 1.4rem;"
               >
                 See our plans to find quite fit for you
               </p>
@@ -250,30 +267,41 @@
     <footer class="footer-dark">
       <div class="container">
         <div class="row mb-4">
-          <div class="col-12 col-md-6 col-lg-4 ">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="mt-4 mb-2 pt-md-3">
               <small class="text-uppercase font-weight-bold">
                 Sign up for Newsletter
               </small>
             </div>
-            <form action="javascript:void(0)">
-              <div class="input-group mb-4">
+            <form
+              action="javascript:void(0)"
+              method="POST"
+              class="needs-validation"
+              data-bs-form-type="newsletter"
+              novalidate
+            >
+              <div class="input-group has-validation mb-4">
                 <input
                   type="email"
+                  id="newsletter-input"
                   class="form-control border-secondary"
                   placeholder="johndoe@example.com"
                   aria-label="Enter your email for newsletter"
-                  arai-describedby="button-addon"
+                  aria-describedby="button-addon"
+                  required
                 />
-                <div class="input-group-append">
+                <div class="input-group-append hs-validation">
                   <button
-                    class="btn btn-secondary border-0"
+                    class="btn btn-secondary rounded-0 rounded-end"
                     type="submit"
-                    id="button-addon"
+                    id="button-addon newsletter-btn"
                   >
                     Sign up
                   </button>
                 </div>
+
+                <div class="valid-feedback">Perfect</div>
+                <div class="invalid-feedback">Enter a valid email please</div>
               </div>
             </form>
           </div>
@@ -285,7 +313,7 @@
               </small>
             </div>
 
-            <div class="social-icons mb-4  ">
+            <div class="social-icons mb-4">
               <span class="mx-2">
                 <a
                   href="#"
@@ -456,13 +484,15 @@
     </footer>
 
     <!--   ||- Scripts  -->
-   <script src="/ext/jquery-3.4.1.slim.min.js" defer></script>
-    <script src="/ext/popper.min.js" defer></script>
-    <script src="/ext/bootstrap.min.js" defer></script>
+    <script src="../ext/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="../ext/popper.min.js" defer></script>
+    <script src="../ext/bootstrap.min.js" defer></script>
     <script
-    src="https://kit.fontawesome.com/8375ed5b9b.js"
-    crossorigin="anonymous"
-    defer
-  ></script>
+      src="https://kit.fontawesome.com/8375ed5b9b.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="../script.js"></script>
   </body>
 </html>

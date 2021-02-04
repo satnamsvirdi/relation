@@ -28,14 +28,14 @@
           <button
             id="navbar-toggler"
             class="navbar-toggler"
-            data-toggle="collapse"
+            data-bs-bs-toggle="collapse"
             type="button"
-            data-target="#topNav"
+            data-bs-bs-target="#topNav"
           >
             <span class="fas fa-bars"> </span>
           </button>
           <div class="navbar-collapse collapse" id="topNav">
-            <div class="navbar-nav ml-auto">
+            <div class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link" href="/pages/features.html">Features</a>
               </li>
@@ -44,7 +44,7 @@
                   class="nav-link dropdown-toggle"
                   id="toggleSolutions"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-bs-toggle=""
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Solutions</a
@@ -104,7 +104,7 @@
                   class="nav-link dropdown-toggle active"
                   id="toggleResources"
                   role="button"
-                  data-toggle="dropdown"
+                  data-bs-bs-toggle=""
                   aria-has-popup="true"
                   aria-expanded="false"
                   >Resources</a
@@ -136,8 +136,8 @@
                 </div>
               </li>
             </div>
-            <div class="navbar-nav ml-3">
-              <a class="nav-link mr-md-3" href="/pages/login.html">Log In</a>
+            <div class="navbar-nav ms-3">
+              <a class="nav-link me-md-3" href="/pages/login.html">Log In</a>
               <a class="btn btn-primary my-3 my-md-0" href="#">Try Relation</a>
             </div>
           </div>
@@ -172,7 +172,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -191,7 +191,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -210,7 +210,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -231,7 +231,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -250,7 +250,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -290,7 +290,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
@@ -328,14 +328,14 @@
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <a class="card-link ml-auto" href="#">Read More...</a>
+                  <a class="card-link ms-auto" href="#">Read More...</a>
                 </div>
               </div>
             </div>
           </div>
 
           <div class="mb-4">
-            <button class="btn btn-outline-secondary btn-block">
+            <button class="btn btn-outline-secondary d-block w-100">
               Load More
             </button>
           </div>
@@ -345,11 +345,8 @@
       <section class="bg-accent text-accent">
         <div class="container">
           <div class="row py-5">
-            <div class="col-12 col-md-10 pr-md-0">
-              <p
-                class="lead text-center text-md-left mb-0 my-1"
-                style="font-size: 1.4rem;"
-              >
+            <div class="col-12 col-md-10 pe-md-0">
+              <p class="lead text-md-left mb-0 my-1" style="font-size: 1.4rem;">
                 Take your publishing to next level
               </p>
             </div>
@@ -375,24 +372,35 @@
                 Sign up for Newsletter
               </small>
             </div>
-            <form action="javascript:void(0)">
-              <div class="input-group mb-4">
+            <form
+              action="javascript:void(0)"
+              method="POST"
+              class="needs-validation"
+              data-bs-form-type="newsletter"
+              novalidate
+            >
+              <div class="input-group has-validation mb-4">
                 <input
                   type="email"
+                  id="newsletter-input"
                   class="form-control border-secondary"
                   placeholder="johndoe@example.com"
                   aria-label="Enter your email for newsletter"
-                  arai-describedby="button-addon"
+                  aria-describedby="button-addon"
+                  required
                 />
-                <div class="input-group-append">
+                <div class="input-group-append hs-validation">
                   <button
-                    class="btn btn-secondary border-0"
+                    class="btn btn-secondary rounded-0 rounded-end"
                     type="submit"
-                    id="button-addon"
+                    id="button-addon newsletter-btn"
                   >
                     Sign up
                   </button>
                 </div>
+
+                <div class="valid-feedback">Perfect</div>
+                <div class="invalid-feedback">Enter a valid email please</div>
               </div>
             </form>
           </div>
@@ -575,7 +583,7 @@
     </footer>
 
     <!--   ||- Scripts  -->
-    <script src="/ext/jquery-3.4.1.slim.min.js" defer></script>
+    <script src="/ext/jquery-3.4.1.slim.min.js"></script>
     <script src="/ext/popper.min.js" defer></script>
     <script src="/ext/bootstrap.min.js" defer></script>
     <script
@@ -583,5 +591,6 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <script src="/script.js"></script>
   </body>
 </html>
